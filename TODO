@@ -1,0 +1,6 @@
+
+version x.x.x
+- Add multiple package build command
+- Add bundled package build command
+- Add unittest (jest)
+- more
