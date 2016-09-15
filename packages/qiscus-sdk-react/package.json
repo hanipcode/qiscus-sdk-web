@@ -1,0 +1,26 @@
+{
+  "name": "@apiep/qiscus-sdk-react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "cross-env NODE_PATH=src react-scripts test --env=jsdom"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  },
+  "keywords": [],
+  "author": "Afief Sholichuddin <apiep.oedin@gmail.com> (https://github.com/z3roconf)",
+  "license": "ISC",
+  "dependencies": {
+    "@apiep/qiscus-sdk-core": "0.0.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "react-scripts": "^0.4.1",
+    "react-test-renderer": "^15.3.1"
+  }
+}

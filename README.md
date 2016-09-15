@@ -1,27 +1,38 @@
-# qiscus-sdk-web
+# qiscus SDK Web
+> qiscus sdk / client for web browser
 
-> Qiscus Javascript SDK For Web
+## Target release
+- multiple build
 
-## Build Setup
+## Sub Packages
+- qiscus-sdk-core
+  Core logic of qiscus sdk
 
-``` bash
-# install dependencies
-npm install
+- qiscus-sdk-react
+  Client / View implementation of qiscus-sdk-core with reactjs
+  it can become an example too for someone who want to create
+  their own client written in reactjs.
 
-# serve with hot reload at localhost:8080
-npm run dev
+- qiscus-sdk-vue
+  Client / View implementation of qiscus-sdk-core with vuejs
+  it can become an example too for someone who want to create
+  their own client writen in vuejs.
 
-# build for production with minification
-npm run build
+- qiscus-sdk-initiator
+  --is it really needed?--
+  Basically, this package is to initialize qiscus sdk to the DOM
+  ```
+  qiscusSdkInitiator.init({
+    core: qiscusSdkCore,                 // qiscus-sdk-core
+    client: qiscusSdkReact,              // qiscus-sdk-react / qiscus-sdk-vue
+    appId: 'qiscus-provied-app-id',      // qiscus widget appId
+    email: 'username@domain.com',        // current user email
+    password: 'password',                // current user password
+    username: 'username',                // current user username
+    avatarURL: 'https://avatar.com/url'  // current user avatar url
+  })
+  ```
 
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# NOTE:
+- Currently cannot transpile a packages, there is already a pull request
+  but not yet merged. https://github.com/lerna/lerna/pull/255
