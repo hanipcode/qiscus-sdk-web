@@ -1,12 +1,8 @@
 # qiscus SDK Web
 > qiscus sdk / client for web browser
 
-# TL;DR
+## TL;DR
 It use lerna as a monorepo management.
-
---Want english? go to https://translate.google.com it's free.--
-Repo ini menggunakan pendekatan monorepo, karena akan lebih memudahkan
-dalam pengembangannya kedepan.
 
 ## How to setup this projects
 - install lerna globally
