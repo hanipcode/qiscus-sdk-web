@@ -164,14 +164,14 @@ export default {
 
 <style lang="scss">
 .qcw-container {
-  width: 400px;
-  height: 500px;
+  width: 75%;
+  height: 571px;
   position: fixed;
-  bottom: 50px; right: 5px;
-  border-radius: 5px;
+  bottom: 0px; right: 5px;
+  /* border-radius: 5px; */
   background: #FFF;
-  box-shadow: 0 3px 15px rgba(0,0,0,.3);
-  transform: translateY(150%);
+  /* box-shadow: 0 3px 15px rgba(0,0,0,.3); */
+  transform: translateY(0%);
   transition: transform 0.32s ease;
   font-family: sans-serif;
   &--open {
@@ -181,8 +181,8 @@ export default {
 .qcw-header {
   background: #8bc;
   color: #ecf0f1;
-  padding: 15px;
-  border-radius: 5px 5px 0 0;
+  padding: 25px;
+  /* border-radius: 5px 5px 0 0; */
   text-shadow: 0 -1px 0 rgba(0,0,0,.3);
   font-weight: bold;
   text-align: center;
@@ -207,7 +207,7 @@ ul#messages__comments {
   list-style: none;
   background: #FFF;
   margin:0;
-  height: 380px;
+  height: 450px;
   overflow: hidden;
   overflow-y: auto;
   padding: 10px 20px;
@@ -256,7 +256,7 @@ ul#messages__comments::-webkit-scrollbar-thumb {
   }
 }
 .qcw-comment-form textarea {
-  width: 330px;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid #ddd;
   font-size: 12px; padding: 7px 10px;

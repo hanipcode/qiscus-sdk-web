@@ -111,8 +111,9 @@ export default {
 }
 .qcw-comment__message {
   line-height: 1.7em;
-  min-height: 30px;
-  margin-bottom: 1px;
+  min-height: 50px;
+  min-width: 300px;
+  margin-bottom: 20px;
   background: lighten(#8bc, 20);
   padding: 3px 15px;
   position: relative;
@@ -223,7 +224,7 @@ export default {
   }
 }
 .qcw-image-container {
-  height: 100px; overflow: hidden;
+  height: 120px; overflow: hidden;
   margin: -8px -10px -10px -10px;
   border-radius: 0 0 5px 5px;
   img {
